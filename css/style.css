@@ -22,7 +22,7 @@
   }
 
   .container {
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
   }
   
@@ -97,12 +97,12 @@
 }
 
 .tools_newcomer-item {
-  background-color: var(--background);
+  background-color: transparent; /* убираем фон по умолчанию */
   padding: 20px;
   border-radius: 16px;
   position: relative;
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   width: 288px;
   height: 284px;
   box-sizing: border-box;
@@ -110,6 +110,7 @@
 
 .tools_newcomer-item:hover {
   transform: translateY(-5px);
+  background-color: var(--background); /* появляется фон при наведении */
 }
 
 .tools_newcomer-image {
