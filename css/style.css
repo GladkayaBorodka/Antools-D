@@ -46,7 +46,6 @@
   flex-wrap: wrap;
 }
 
-/* Ліва частина (заголовок, опис, кнопка) */
 .tools_newcomer-wrapper {
   max-width: 500px;
   display: flex;
@@ -84,7 +83,6 @@
   background-color: var(--tools-color-wraper);
 }
 
-/* Список інструментів */
 .tools_newcomer-list {
   display: grid;
   grid-template-columns: repeat(2, 288px);
@@ -97,7 +95,7 @@
 }
 
 .tools_newcomer-item {
-  background-color: transparent; /* убираем фон по умолчанию */
+  background-color: transparent;
   padding: 20px;
   border-radius: 16px;
   position: relative;
@@ -110,7 +108,7 @@
 
 .tools_newcomer-item:hover {
   transform: translateY(-5px);
-  background-color: var(--background); /* появляется фон при наведении */
+  background-color: var(--background); 
 }
 
 .tools_newcomer-image {
@@ -234,16 +232,23 @@
   
   .testimonial-fg-text {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: var(--logo-color);
-    font-weight: bold;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: var(--tools-color-list);
     font-size: 16px;
     white-space: nowrap;
     text-align: center;
   }
+  .testimonial-fg strong.testimonial-fg-text {
+    font-weight: bold;
+  }
+  
+  .testimonial-fg small.testimonial-fg-text {
+    top: 60%;
+    color: var(--header-list-color);
+  }
+  
   .testimonial-content {
     position: relative;
     max-width: 500px;
@@ -295,11 +300,11 @@
   }
   
   .testimonial_controls-arrow_left img {
-    transform: scaleX(-1); /* Лево */
+    transform: scaleX(-1); 
   }
   
   .testimonial_controls-arrow_right img {
-    transform: none; /* Вправо */
+    transform: none; 
   }
   
   .testimonial-thumbnails {
@@ -322,6 +327,8 @@
     background-color: var(--button-color);
     opacity: 1;
   }
+
+
   /* === Contributor Section === */
   .contributor {
     padding: 80px 0;
