@@ -137,7 +137,7 @@
 
 .tools_newcomer-price {
   font-size: 14px;
-  color: var(--header-list-color);
+  color: var(--tools-color-wraper);
   margin: 5px 0 10px;
   line-height: 30px;
 }
